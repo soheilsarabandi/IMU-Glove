@@ -17,7 +17,7 @@ min_acc_norm    = 0.85;
 gyro_th         = 18; 
 
 t_calibration   = offset_step*T;
-t_experiment    = 15;
+t_experiment    = 10;
 
 % n_imus = 4;
 % n_orientations = 3;
@@ -131,8 +131,8 @@ n=size(mm);
 % plot(i,angle3)
 % legend({'1','2','3'},'Location','southwest')
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-for i=1:30:n(3)
+% 
+for i=1:1:n(3)
     jj=mm(:,:,i);
     SimulationPlot(jj);
     pause(0.1)
